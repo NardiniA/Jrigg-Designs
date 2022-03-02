@@ -206,6 +206,15 @@ p {
     background-color: var(--primary-color);
     padding-bottom: 1.5rem;
   }
+  .header > .nav__header::before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: var(--primary-color);
+    content: "";
+    height: 40px;
+  }
 }
 
 .header.show nav {
@@ -525,6 +534,54 @@ p {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.section__desc.text__center {
+  text-align: center !important;
+}
+
+.section__desc.text__center .section__row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__desc-title {
+  font-family: var(--serif-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: var(--white-color);
+  margin-bottom: 0.5rem;
+}
+
+.section__desc-desc {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.section__desc-btnrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section__desc-btnrow > * {
+  margin: 0.5rem;
+}
+
+.section__desc > *:last-child {
+  margin-bottom: 0;
 }
 
 /*========== Layout ==========*/

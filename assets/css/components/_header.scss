@@ -63,6 +63,16 @@
             align-items: flex-start;
             background-color: var(--primary-color);
             padding-bottom: 1.5rem;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                left: 0;
+                background: var(--primary-color);
+                content: "";
+                height: 40px;
+            }
         }
     }
 
