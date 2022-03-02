@@ -1,0 +1,11 @@
+@import "components/banner";
+@import "components/projectCard";
+
+.projects__header {
+    padding: 70px 0 0;
+    margin-bottom: 0;
+
+    p {
+        font-size: 18px;
+    }
+}

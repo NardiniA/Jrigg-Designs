@@ -1,0 +1,46 @@
+.people__card {
+    margin-bottom: 50px;
+
+    &-image {
+        border-radius: 9999px;
+        overflow: hidden;
+
+        img {
+            width: 150px;
+            max-width: none;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        &-wrapper {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            margin: 0px auto 25px;
+        }
+    }
+
+    &-team-info {
+        display: block;
+        text-align: center;
+
+        h5 {
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 1.5;
+            font-family: var(--serif-font);
+            text-transform: capitalize;
+            color: var(--white-color);
+            margin: 0 0 5px;
+            letter-spacing: 0.05em;
+        }
+
+        h6 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--white-alt);
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    margin: 0;
+    overflow: visible;
+
+    outline: none;
+    box-shadow: none;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--white-color);
+    cursor: pointer;
+    
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-family: inherit;
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%;
+    text-transform: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+    i, svg {
+        color: var(--white-color);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+
+    i, i::before, i::after {
+        font-size: 24px;
+        height: 24px;
+        width: 24px;
+    }
+
+    svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    &:hover, &:focus {
+        background-color: var(--primary-light);
+        color: var(--white-color);
+    }
+
+    &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+        background-color: var(--white-color);
+        color: var(--dark-30);
+        pointer-events: none;
+
+        i, svg {
+            color: var(--dark-30);
+        }
+    }
+
+    &.icon {
+        &--right {
+            padding: 12px 24px 12px 32px;
+
+            > * {
+                margin-left: 10px;
+            }
+        }
+
+        &--left {
+            padding: 12px 32px 12px 24px;
+
+            > * {
+                margin-right: 10px;
+            }
+        }
+
+        &--only {
+            padding: 12px;
+        }
+    }
+
+    &.button--solid {
+        background-color: var(--white-color);
+        color: var(--primary-color);
+
+        &:hover, &:focus {
+            background-color: var(--white-alt);
+            color: var(--primary-color);
+        }
+
+        &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+            opacity: 0.5;
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            pointer-events: none;
+            user-select: none;
+        }
+    }
+}

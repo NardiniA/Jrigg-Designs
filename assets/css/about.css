@@ -1,0 +1,222 @@
+@media screen and (min-width: 992px) {
+  .content.reversed .content__info {
+    padding: 0 0 0 90px;
+  }
+  .content.reversed .content__box-img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.content__row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__info {
+  padding: 0 0.5rem 45px;
+}
+
+@media screen and (min-width: 992px) {
+  .content__info {
+    padding: 0 90px 0 0;
+  }
+}
+
+.content__info > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.content__title {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 480px) {
+  .content__title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+}
+
+.content__desc {
+  color: var(--white-alt);
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-bottom: 1.75rem;
+}
+
+.content__box {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content__img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  padding: 170px 0 80px;
+  background-color: var(--primary-light);
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    padding-top: 130px;
+  }
+}
+
+.banner.text__center {
+  text-align: center !important;
+}
+
+.banner.base {
+  background-color: var(--primary-color);
+}
+
+.banner.dark {
+  background-color: var(--primary-dark);
+}
+
+.banner.darkest {
+  background-color: var(--primary-darkest);
+}
+
+.banner.image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(/assets/img/banner-2.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/assets/img/banner-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__info {
+  z-index: 10;
+}
+
+.banner__title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .banner__title {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .banner__title {
+    font-size: 64px;
+  }
+}
+
+.banner__desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+  color: var(--white-alt);
+}
+
+.faq {
+  background: var(--white-color);
+  border: 1px solid #f3f4fe;
+  -webkit-box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+  box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.faq.opened .faq__info {
+  max-height: 300px;
+}
+
+.faq.opened .faq__icon i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  opacity: 0.88;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary-darkest);
+  padding: 30px;
+  width: 100%;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.faq__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  color: var(--primary-dark);
+  margin-right: 1.5rem;
+  background-color: var(--primary-light);
+  cursor: pointer;
+}
+
+.faq__icon i {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.faq__info {
+  max-height: 0;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.faq__data {
+  padding: 0px 30px 40px 95px;
+}
+
+.faq__body {
+  color: var(--primary-dark);
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=about.css.map */

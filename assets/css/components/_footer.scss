@@ -1,0 +1,32 @@
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+
+    @media (min-width: 540px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    &__copy {
+        color: var(--white-color);
+        font-size: 1rem;
+        font-family: var(--serif-font);
+        margin: 0 0 1rem;
+
+        @media (min-width: 540px) {
+            margin: 0;
+        }
+    }
+
+    &__links {
+        a {
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+    }
+}

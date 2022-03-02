@@ -1,0 +1,53 @@
+.recruitment__card {
+    padding: 40px;
+    background-color: var(--primary-light);
+    color: var(--white-color);
+    margin-bottom: 2rem;
+
+    &-badge {
+        font-family: var(--body-font);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.4;
+        font-size: 14px;
+        color: var(--primary-color);
+        background: var(--white-color);
+        padding: 5px 20px;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    &-title {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
+
+    &-desc {
+        margin-bottom: 2rem;
+    }
+
+    &-btn {
+        background-color: var(--primary-light);
+        color: var(--white-color);
+
+        &:hover, &:focus {
+            background-color: var(--white-color);
+            color: var(--primary-dark);
+
+            i, svg {
+                color: var(--primary-dark);
+            }
+        }
+
+        &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+            background-color: rgba(242, 242, 242, 0.5);
+            color: #666B7E;
+            pointer-events: none;
+
+            i, svg {
+                color: #666B7E;
+            }
+        }
+    }
+}
