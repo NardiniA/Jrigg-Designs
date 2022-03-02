@@ -1,0 +1,42 @@
+.section__desc {
+    &.text__center {
+        text-align: center !important;
+
+        .section__row {
+            justify-content: center;
+        }
+    }
+
+    &-title {
+        font-family: var(--serif-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5rem;
+        line-height: 1.5;
+        color: var(--white-color);
+        margin-bottom: 0.5rem;
+    }
+
+    &-desc {
+        font-family: var(--body-font);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    &-btnrow {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        > * {
+            margin: 0.5rem;
+        }
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
