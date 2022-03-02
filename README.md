@@ -1,0 +1,1 @@
+This repository is an online store and hosting platform for the testing of a JRIGG construction website redesign.
