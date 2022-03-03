@@ -1,0 +1,60 @@
+.notif {
+    --notif-color: rgba(255, 255, 255, 1);
+    --notif-color-light: rgba(255,255,255,0.15);
+    --text-color: rgba(255, 255, 255, 1);
+    --text-color-light: rgba(255,255,255,0.7);
+
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem 2rem 2rem 1.5rem;
+    background-color: var(--notif-color-light);
+    border-left: 3px solid var(--notif-color);
+
+    &.warning {
+        --notif-color: rgba(255, 187, 51, 1);
+        --notif-color-light: rgba(255, 187, 51, 0.15);
+    }
+
+    &.error {
+        --notif-color: rgba(255, 114, 71, 1);
+        --notif-color-light: rgba(255, 95, 47, 0.15); 
+    }
+
+    &.success {
+        --notif-color: rgba(104, 158, 123, 1);
+        --notif-color-light: rgba(104, 158, 123, 0.15);
+    }
+
+    &__icon {
+        margin-right: 1.5rem;
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 1;
+        color: var(--text-color);
+        align-self: flex-start;
+    }
+
+    &__info {
+
+        h4 {
+            font-family: var(--body-font);
+            font-size: 1.75rem;
+            line-height: 1.5;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--text-color-light);
+            margin: 0;
+        }
+    }
+}

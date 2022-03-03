@@ -4,6 +4,18 @@
     color: var(--white-color);
     margin-bottom: 2rem;
 
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            color: var(--white-color);
+        }
+    }
+
     &-badge {
         font-family: var(--body-font);
         font-style: normal;
@@ -27,7 +39,14 @@
         margin-bottom: 2rem;
     }
 
-    &-btn {
+    &-list {
+        margin: 1rem 0 2rem 1rem;
+        padding: 0;
+        list-style-type: disc;
+        color: var(--white-alt);
+    }
+
+    &-btn, .button {
         background-color: var(--primary-light);
         color: var(--white-color);
 

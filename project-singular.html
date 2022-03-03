@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap-grid.css" />
     <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/all.css" />
+    <link rel="stylesheet" href="/assets/css/project.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
 </head>
@@ -58,7 +59,7 @@
             <div class="nav">
                 <ul>
                     <li class="nav__item">
-                        <a class="nav__link" href="/about.html">About Us</a>
+                        <a class="nav__link" href="about.html">About Us</a>
                     </li>
                     <li class="nav__item dropdown">
                         <a href="#0" class="dropdown__header">
@@ -67,42 +68,42 @@
                         </a>
                         <ul class="dropdown__menu">
                             <li class="dropdown__item">
-                                <a href="/project-singular.html" class="nav__link">Pershore</a>
+                                <a href="project-singular.html" class="nav__link">Pershore</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="/project-singular.html" class="nav__link">Todenham</a>
+                                <a href="project-singular.html" class="nav__link">Todenham</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="/project-singular.html" class="nav__link">Chastleton</a>
+                                <a href="project-singular.html" class="nav__link">Chastleton</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="/project-singular.html" class="nav__link">Stanton</a>
+                                <a href="project-singular.html" class="nav__link">Stanton</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="/project-singular.html" class="nav__link">Broadway</a>
+                                <a href="project-singular.html" class="nav__link">Broadway</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="/project-singular.html" class="nav__link">The Tews</a>
+                                <a href="project-singular.html" class="nav__link">The Tews</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="/projects.html" class="nav__link">View All</a>
+                                <a href="projects.html" class="nav__link">View All</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="/delivery.html" class="nav__link">Delivery</a>
+                        <a href="delivery.html" class="nav__link">Delivery</a>
                     </li>
                     <li class="nav__item">
-                        <a href="/people.html" class="nav__link">People</a>
+                        <a href="people.html" class="nav__link">People</a>
                     </li>
                     <li class="nav__item">
-                        <a href="/associates.html" class="nav__link">Associates</a>
+                        <a href="associates.html" class="nav__link">Associates</a>
                     </li>
                     <li class="nav__item">
-                        <a href="/recruitment.html" class="nav__link">Recruitment</a>
+                        <a href="recruitment.html" class="nav__link">Recruitment</a>
                     </li>
                     <li class="nav__item">
-                        <a href="/contact.html" class="nav__link">Contact</a>
+                        <a href="contact.html" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
                         <a href="#0" class="nav__link">
@@ -123,40 +124,39 @@
     </header>
 
     <main class="main">
-        <section class="banner text__center">
-            <div class="an-container banner__info">
-                <h1 class="banner__title">Content Component</h1>
-            </div>
-        </section>
-        
-        <section class="section content">
-            <div class="an-container">
-                <div class="row content__row">
-                    <div class="col-lg-6 col-12 content__box-data">
-                        <div class="content__info">
-                            <h2 class="content__title">Lorem ipsum dolor sit amet.</h2>
-                            <p class="content__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo beatae voluptas iste architecto aliquid consequuntur voluptates labore blanditiis ab? Asperiores consequatur iusto labore, perferendis nemo provident eveniet, perspiciatis totam quos accusantium laborum earum laudantium.</p>
+        <section class="project">
+            <div class="swiper project__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide project__slide project__text">
+                        <div class="project__slide-img" style="position: relativel">
+                            <i class='bx bx-fullscreen' style="position: absolute; bottom: 37px; right: 30px; font-size: 2rem; color: #fff; cursor: pointer;"></i>
+                            <img src="/assets/img/projects/project1.jpg" alt="#" />
+                        </div>
+                        <div class="project__slide-info">
+                            <div class="project__slide-data">
+                                <h2 class="project__slide-title">Work in Progress</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur eos explicabo doloremque ipsum, incidunt, voluptatem autem reprehenderit labore, harum neque ducimus quod est! Iure fugit corrupti quisquam iste eligendi, blanditiis expedita, numquam tenetur ducimus perspiciatis soluta. Nihil voluptate aspernatur nobis perferendis ab omnis est, sequi molestias! Ut, laudantium porro.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12 content__box-img">
-                        <div class="content__box">
-                            <img src="/assets/img/content.jpg" alt="#" class="content__img" />
+                    <div class="swiper-slide project__slide">
+                        <div class="project__slide-img">
+                            <img src="/assets/img/projects/project2.jpg" alt="#" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide project__slide">
+                        <div class="project__slide-img">
+                            <img src="/assets/img/projects/project3.jpg" alt="#" />
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination projects__pagination"></div>
             </div>
         </section>
-
-        <footer class="footer">
-            <p class="footer__copy">&copy; Jrigg Construction 2022</p>
-
-            <div class="footer__links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-            </div>
-        </footer>
     </main>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/project.js"></script>
 </body>
 </html>

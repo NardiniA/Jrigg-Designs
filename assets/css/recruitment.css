@@ -77,6 +77,20 @@
   margin-bottom: 2rem;
 }
 
+.recruitment__card a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.recruitment__card a:hover {
+  color: var(--white-color);
+}
+
 .recruitment__card-badge {
   font-family: var(--body-font);
   font-style: normal;
@@ -100,27 +114,34 @@
   margin-bottom: 2rem;
 }
 
-.recruitment__card-btn {
+.recruitment__card-list {
+  margin: 1rem 0 2rem 1rem;
+  padding: 0;
+  list-style-type: disc;
+  color: var(--white-alt);
+}
+
+.recruitment__card-btn, .recruitment__card .button {
   background-color: var(--primary-light);
   color: var(--white-color);
 }
 
-.recruitment__card-btn:hover, .recruitment__card-btn:focus {
+.recruitment__card-btn:hover, .recruitment__card-btn:focus, .recruitment__card .button:hover, .recruitment__card .button:focus {
   background-color: var(--white-color);
   color: var(--primary-dark);
 }
 
-.recruitment__card-btn:hover i, .recruitment__card-btn:hover svg, .recruitment__card-btn:focus i, .recruitment__card-btn:focus svg {
+.recruitment__card-btn:hover i, .recruitment__card-btn:hover svg, .recruitment__card-btn:focus i, .recruitment__card-btn:focus svg, .recruitment__card .button:hover i, .recruitment__card .button:hover svg, .recruitment__card .button:focus i, .recruitment__card .button:focus svg {
   color: var(--primary-dark);
 }
 
-.recruitment__card-btn.disabled, .recruitment__card-btn.disabled:hover, .recruitment__card-btn.disabled:focus, .recruitment__card-btn:disabled, .recruitment__card-btn:disabled:hover, .recruitment__card-btn:disabled:focus {
+.recruitment__card-btn.disabled, .recruitment__card-btn.disabled:hover, .recruitment__card-btn.disabled:focus, .recruitment__card-btn:disabled, .recruitment__card-btn:disabled:hover, .recruitment__card-btn:disabled:focus, .recruitment__card .button.disabled, .recruitment__card .button.disabled:hover, .recruitment__card .button.disabled:focus, .recruitment__card .button:disabled, .recruitment__card .button:disabled:hover, .recruitment__card .button:disabled:focus {
   background-color: rgba(242, 242, 242, 0.5);
   color: #666B7E;
   pointer-events: none;
 }
 
-.recruitment__card-btn.disabled i, .recruitment__card-btn.disabled svg, .recruitment__card-btn.disabled:hover i, .recruitment__card-btn.disabled:hover svg, .recruitment__card-btn.disabled:focus i, .recruitment__card-btn.disabled:focus svg, .recruitment__card-btn:disabled i, .recruitment__card-btn:disabled svg, .recruitment__card-btn:disabled:hover i, .recruitment__card-btn:disabled:hover svg, .recruitment__card-btn:disabled:focus i, .recruitment__card-btn:disabled:focus svg {
+.recruitment__card-btn.disabled i, .recruitment__card-btn.disabled svg, .recruitment__card-btn.disabled:hover i, .recruitment__card-btn.disabled:hover svg, .recruitment__card-btn.disabled:focus i, .recruitment__card-btn.disabled:focus svg, .recruitment__card-btn:disabled i, .recruitment__card-btn:disabled svg, .recruitment__card-btn:disabled:hover i, .recruitment__card-btn:disabled:hover svg, .recruitment__card-btn:disabled:focus i, .recruitment__card-btn:disabled:focus svg, .recruitment__card .button.disabled i, .recruitment__card .button.disabled svg, .recruitment__card .button.disabled:hover i, .recruitment__card .button.disabled:hover svg, .recruitment__card .button.disabled:focus i, .recruitment__card .button.disabled:focus svg, .recruitment__card .button:disabled i, .recruitment__card .button:disabled svg, .recruitment__card .button:disabled:hover i, .recruitment__card .button:disabled:hover svg, .recruitment__card .button:disabled:focus i, .recruitment__card .button:disabled:focus svg {
   color: #666B7E;
 }
 /*# sourceMappingURL=recruitment.css.map */
