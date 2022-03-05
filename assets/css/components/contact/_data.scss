@@ -63,13 +63,9 @@
     }
 
     a.contact__desc {
-        transition-duration: 0.3s;
+        transition-duration: 0.4s;
         transition-timing-function: ease;
         cursor: pointer;
-
-        &:hover {
-            color: var(--primary-light);
-        }
     }
 
     &__icon {

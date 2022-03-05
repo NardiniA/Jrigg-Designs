@@ -12,4 +12,14 @@ window.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
     });
+
+    let control = document.querySelector('.home__controls');
+    control.addEventListener('click', () => {
+        if (swiper.autoplay.running) {
+            swiper.autoplay.stop();
+        } else {
+            swiper.autoplay.start();
+        }
+        control.classList.toggle('paused');
+    });
 });

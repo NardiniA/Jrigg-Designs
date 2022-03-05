@@ -133,6 +133,13 @@ p {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 992px) {
+  .header__home {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+}
+
 @media (max-width: 991px) {
   .header::before {
     content: "";

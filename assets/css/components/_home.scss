@@ -1,5 +1,7 @@
 /*========== HOME ==========*/
 .home {
+    position: relative;
+
     ul {
         margin: 0;
         padding: 0;
@@ -43,5 +45,42 @@
     .swiper-pagination-bullet-active {
         background-color: var(--secondary-color);
         opacity: 1;
+    }
+
+    &__controls {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        font-size: 2rem;
+        line-height: 1;
+        color: var(--white-color);
+        z-index: 1;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            background-color: var(--primary-dark);
+        }
+
+        &.paused {
+            .home__pause {
+                display: none;
+            }
+
+            .home__play {
+                display: block;
+            }
+        }
+    }
+
+    &__play {
+        display: none;
+    }
+
+    &__pause {
+        display: block;
     }
 }

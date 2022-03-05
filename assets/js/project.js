@@ -10,4 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
             clickable: true
         }
     });
+
+    let glightbox = new GLightbox({
+        selector: ".glightbox",
+    });
 });

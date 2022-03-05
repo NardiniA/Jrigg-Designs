@@ -1,4 +1,5 @@
 .faq {
+    --scrollHeight: 300px;
     background: var(--white-color);
     border: 1px solid #f3f4fe;
     -webkit-box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
@@ -9,7 +10,7 @@
 
     &.opened {
         .faq__info {
-            max-height: 300px;
+            max-height: var(--scrollHeight);
         }
 
         .faq__icon i {
@@ -46,8 +47,8 @@
         cursor: pointer;
 
         i {
-            transition-duration: 0.5s;
-            transition-timing-function: ease-in-out;
+            transition-duration: 0.4s;
+            transition-timing-function: ease;
         }
     }
 

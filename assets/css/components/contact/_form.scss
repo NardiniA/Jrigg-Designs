@@ -6,6 +6,14 @@
         height: 3rem;
         border-bottom: 1px solid var(--white-alt);
         margin-bottom: 2rem;
+
+        &:focus-within {
+            border-bottom-color: var(--secondary-color);
+
+            .form__label {
+                color: var(--secondary-color);
+            }
+        }
     }
 
     &__input {

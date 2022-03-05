@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 <body>
-    <header class="header">
+    <header class="header header__home">
         <div class="nav__header">
             <a href="/" class="header__logo"></a>
 
@@ -41,18 +41,6 @@
                 <span></span>
             </button>
         </div>
-
-        <footer class="header__social">
-            <a href="https://www.instagram.com/jrigg_broadway/">
-                <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="#">
-                <i class="bx bxl-facebook-square"></i>
-            </a>
-            <a href="#">
-                <i class="bx bxl-twitter"></i>
-            </a>
-        </footer>
 
         <nav>
             <div class="nav">
@@ -122,7 +110,7 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main" style="padding: 0;">
         <section class="home">
             <div class="swiper home__swiper">
                 <ul class="swiper-wrapper">
@@ -140,16 +128,16 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
 
-        <footer class="footer">
-            <p class="footer__copy">&copy; Jrigg Construction 2022</p>
-
-            <div class="footer__links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
+            <div class="home__controls">
+                <div class="home__play">
+                    <i class='bx bx-play'></i>
+                </div>
+                <div class="home__pause">
+                    <i class='bx bx-pause'></i>
+                </div>
             </div>
-        </footer>
+        </section>
     </main>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
     <header class="header">
@@ -128,8 +129,10 @@
             <div class="swiper project__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide project__slide project__text">
-                        <div class="project__slide-img" style="position: relativel">
-                            <i class='bx bx-fullscreen' style="position: absolute; bottom: 37px; right: 30px; font-size: 2rem; color: #fff; cursor: pointer;"></i>
+                        <div class="project__slide-img" style="position: relative;">
+                            <a href="/assets/img/projects/project1.jpg" class="glightbox" style="position: absolute; bottom: 37px; right: 30px; font-size: 2rem; color: #fff; cursor: pointer;">
+                                <i class='bx bx-fullscreen'></i>
+                            </a>
                             <img src="/assets/img/projects/project1.jpg" alt="#" />
                         </div>
                         <div class="project__slide-info">
@@ -141,11 +144,17 @@
                     </div>
                     <div class="swiper-slide project__slide">
                         <div class="project__slide-img">
+                            <a href="/assets/img/projects/project2.jpg" class="glightbox" style="position: absolute; bottom: 37px; right: 30px; font-size: 2rem; color: #fff; cursor: pointer;">
+                                <i class='bx bx-fullscreen'></i>
+                            </a>
                             <img src="/assets/img/projects/project2.jpg" alt="#" />
                         </div>
                     </div>
                     <div class="swiper-slide project__slide">
                         <div class="project__slide-img">
+                            <a href="/assets/img/projects/project3.jpg" class="glightbox" style="position: absolute; bottom: 37px; right: 30px; font-size: 2rem; color: #fff; cursor: pointer;">
+                                <i class='bx bx-fullscreen'></i>
+                            </a>
                             <img src="/assets/img/projects/project3.jpg" alt="#" />
                         </div>
                     </div>
@@ -156,6 +165,7 @@
     </main>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/project.js"></script>
 </body>

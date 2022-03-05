@@ -1,4 +1,8 @@
 /*========== HOME ==========*/
+.home {
+  position: relative;
+}
+
 .home ul {
   margin: 0;
   padding: 0;
@@ -43,5 +47,42 @@
 .home .swiper-pagination-bullet-active {
   background-color: var(--secondary-color);
   opacity: 1;
+}
+
+.home__controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--white-color);
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.home__controls:hover {
+  background-color: var(--primary-dark);
+}
+
+.home__controls.paused .home__pause {
+  display: none;
+}
+
+.home__controls.paused .home__play {
+  display: block;
+}
+
+.home__play {
+  display: none;
+}
+
+.home__pause {
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */
