@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
         autoHeight: "auto",
         effect: "slide",
-        speed: 750,
+        speed: 1250,
         direction: "horizontal",
         pagination: {
             el: ".swiper-pagination",
