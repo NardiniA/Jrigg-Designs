@@ -26,8 +26,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     dropdowns.forEach(d => {
         let head = d.querySelector('.dropdown__header');
+        let menu = d.querySelector('.dropdown__menu');
         head.addEventListener('click', () => {
             d.classList.toggle('show');
         });
+
+        menu.style.setProperty(
+            "--dropdownHeight",
+            menu.childElementCount * 40 + 16 + "px"
+        );
     });
 });

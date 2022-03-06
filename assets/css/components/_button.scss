@@ -1,4 +1,9 @@
 .button {
+    --btn-light: var(--primary-light);
+    --btn-base: var(--primary-color);
+    --btn-dark: var(--primary-dark);
+    --btn-darkest: var(--primary-darkest);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -47,9 +52,14 @@
         width: 24px;
     }
 
-    &:hover, &:focus {
-        background-color: var(--primary-light);
+    &:hover {
+        background-color: var(--btn-light);
         color: var(--white-color);
+    }
+
+    &:focus {
+        background-color: var(--white-color);
+        color: var(--btn-base);
     }
 
     &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
@@ -86,19 +96,68 @@
 
     &.button--solid {
         background-color: var(--white-color);
-        color: var(--primary-color);
+        color: var(--btn-base);
 
         &:hover, &:focus {
-            background-color: var(--white-alt);
-            color: var(--primary-color);
+            background-color: rgba(255,255,255,0.75);
+            color: var(--btn-base);
         }
 
         &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
             opacity: 0.5;
             background-color: var(--white-color);
-            color: var(--primary-color);
+            color: var(--btn-base);
             pointer-events: none;
             user-select: none;
         }
+    }
+
+    &.button--outline {
+        background-color: transparent;
+        color: var(--white-color);
+        border: 0.5px solid var(--white-color);
+
+        &:hover {
+            background-color: var(--btn-light);
+            color: var(--white-color);
+        }
+
+        &:focus {
+            background-color: var(--white-color);
+            color: var(--btn-base);
+        }
+
+        &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+            opacity: 0.5;
+            background-color: var(--btn-base);
+            color: var(--white-alt);
+            pointer-events: none;
+            user-select: none;
+        }
+    }
+
+    &.button--teritary {
+        background-color: var(--btn-light);
+        color: var(--white-color);
+
+        &:hover, &:focus {
+            background-color: var(--white-color);
+            color: var(--btn-base);
+        }
+
+        &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+            opacity: 0.5;
+            background-color: var(--btn-light);
+            color: var(--white-color);
+            pointer-events: none;
+            user-select: none;
+        }
+    }
+
+    &.button--secondary {
+        --btn-light: #c6ab6620;
+        --btn-base: var(--secondary-color);
+        --btn-dark: #AD8E40;
+        --btn-darkest: #8D7434;
     }
 }

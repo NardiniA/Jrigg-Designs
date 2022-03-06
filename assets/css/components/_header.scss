@@ -1,3 +1,7 @@
+:root {
+    --dropdownHeight: 600px;
+}
+
 /*========== HEADER ==========*/
 .header {
     width: 100%;
@@ -252,7 +256,7 @@
             &.show {
                 .dropdown__menu {
                     height: 100%;
-                    max-height: 600px;
+                    max-height: var(--dropdownHeight);
                 }
 
                 .dropdown__toggle {

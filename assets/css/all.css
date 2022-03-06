@@ -492,11 +492,6 @@
   overflow: hidden;
 }
 
-.project__card-img:hover img {
-  -webkit-transform: rotate(2deg) scale(1.1);
-          transform: rotate(2deg) scale(1.1);
-}
-
 .project__card-img a {
   text-decoration: none;
   color: var(--white-color);

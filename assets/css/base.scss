@@ -10,7 +10,7 @@
     --primary-darkest: #02270F;
     --secondary-color: #c6ab66;
     --white-color: #fff;
-    --white-alt: #ffffff70;
+    --white-alt: rgba(255,255,255,0.5);
 
     /*===== Font and typography =====*/
     --body-font: 'Lato', sans-serif;
@@ -44,19 +44,75 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.5rem;
     color: var(--white-color);
     padding: 0;
     font-family: var(--serif-font);
     font-weight: 100;
-    line-height: 1.4;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 2rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 2.25rem;
+    }
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.75rem;
+    }
+}
+
+h4, .h4 {
+    font-size: 1.25rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+h5, .h5 {
+    font-size: 1rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.25rem;
+    }
+}
+
+h6, .h6 {
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
 a {
     text-decoration: none;
     line-height: inherit;
     color: var(--secondary-color);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--white-color);
+    }
 }
 
 img {
@@ -64,6 +120,7 @@ img {
     width: 100%;
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 p {
@@ -71,9 +128,134 @@ p {
     font-family: inherit;
     font-size: 1rem;
     line-height: 1.6;
-    margin: 0 0 1.25rem;
+    margin: 0 0 1.5rem;
     text-rendering: optimizeLegibility;
     color: var(--white-alt);
+}
+
+ul, ol {
+    padding: 0 0 0 1.5rem;
+    margin: 1rem 0 2rem 0;
+    color: var(--white-color);
+    font-size: 18px;
+
+    li {
+        margin: 0.75rem 0;
+    }
+}
+
+ol li {
+    padding-left: 0.5rem;
+}
+
+blockquote {
+    background-image: url(/assets/img/quote-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-light);
+    padding: 40px;
+    text-align: center;
+    margin: 0 0 40px;
+    border-radius: 10px;
+
+    &::before {
+        content: "\eb6e";
+        font-size: 3rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+        color: var(--secondary-color) !important;
+        display: inline-block;
+        font: normal normal normal 1em/1 'LineIcons';
+        color: inherit;
+        flex-shrink: 0;
+        speak: none;
+        text-transform: none;
+        line-height: 1;
+        vertical-align: -0.125em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    p {
+        color: var(--white-color);
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 600;
+        margin: 0 0 0.25rem;
+    }
+
+    p:nth-last-child(2) {
+        margin-bottom: 1.25rem;
+    }
+
+    p:last-child {
+        font-family: var(--serif-font);
+        font-style: italic;
+        letter-spacing: 0.05em;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--white-alt);
+        margin: 0;
+    }
+}
+
+code {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--primary-light);
+    color: var(--white-color);
+    display: block;
+    margin: 0 0 40px;
+}
+
+table {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(33, 33, 52, 0.1);
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 40px;
+
+    th, td {
+        padding: 16px;
+        color: var(--primary-dark);
+
+        &:first-of-type {
+            padding: 0 4px 0 28px;
+        }
+
+        &:last-of-type {
+            padding: 16px 20px 16px 16px;
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    th, strong {
+        font-weight: 600;
+        font-size: 0.6875rem;
+        line-height: 1.45;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    tr {
+        border-top: 1px solid rgb(234, 234, 239);
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
 }
 
 ::-webkit-scrollbar {
@@ -85,6 +267,11 @@ p {
 }
 ::-webkit-scrollbar-track {
     background: #245a37;
+}
+
+::selection {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .no-scroll {

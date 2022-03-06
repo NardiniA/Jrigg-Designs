@@ -10,6 +10,11 @@
   list-style: none;
 }
 
+.home ul li {
+  margin: 0;
+  padding: 0;
+}
+
 .home ul img, .home ul video {
   display: block;
   height: 100vh;
@@ -34,18 +39,37 @@
   height: 10px;
   margin: 0 10px 0 0 !important;
   display: inline-block;
-  border-radius: 0;
-  border: none;
   background: #fff;
   opacity: .7;
   text-indent: -3000px;
   font-size: 0;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.home .swiper-pagination-bullet:hover, .home .swiper-pagination-bullet:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none;
+  opacity: 0.5;
 }
 
 .home .swiper-pagination-bullet-active {
   background-color: var(--secondary-color);
+  opacity: 1;
+}
+
+.home .swiper-pagination-bullet-active:hover, .home .swiper-pagination-bullet-active:focus {
   opacity: 1;
 }
 

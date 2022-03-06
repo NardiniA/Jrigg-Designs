@@ -10,10 +10,6 @@
         max-height: 300px;
         overflow: hidden;
 
-        &:hover img {
-            transform: rotate(2deg) scale(1.1);
-        }
-
         a {
             text-decoration: none;
             color: var(--white-color);
