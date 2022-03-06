@@ -20,7 +20,10 @@ window.addEventListener('DOMContentLoaded', () => {
         selector: ".glightbox",
     });
 
-    glightbox.on("slide_changed", ({ prev, current }) => {
+    glightbox.on("slide_changed", (data) => {
+        const prev = data.prev;
+        const current = data.current;
+
         if (prev.index - current.index === -1) {
             swiper.slideNext();
         } else if (prev.index - current.index === 1) {

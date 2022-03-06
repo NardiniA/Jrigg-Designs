@@ -4,9 +4,6 @@
         flex-wrap: wrap;
 
         @media screen and (max-width: 992px) {
-            max-height: 100vh;
-            height: 100%;
-
             &-img {
                 max-height: 100vh;
             }
@@ -14,10 +11,15 @@
     
         &-info {
             width: 100%;
-            padding: 100px 2rem 0;
-            height: 100vh;
+            padding: 100px 2rem 80px;
+            height: 100%;
             overflow-x: hidden;
             overflow-y: auto;
+
+            @media screen and (max-width: 992px) and (orientation: landscape) and (max-height: 450px) {
+                height: 100vh;
+                padding-bottom: 40px;
+            }
 
             @media screen and (min-width: 992px) {
                 padding: 130px 2rem 80px;
@@ -29,11 +31,6 @@
                 line-height: 1.6;
                 margin-bottom: 0.75rem;
             }
-        }
-
-        &-data {
-            overflow-x: hidden;
-            overflow-y: auto;
         }
 
         &-img {
@@ -59,7 +56,7 @@
         cursor: pointer;
         font-size: 2rem;
 
-        @media screen and (max-width: 992px) and (orientation: landscape) and (max-height: 650px) {
+        @media screen and (max-width: 992px) and (orientation: landscape) and (max-height: 450px) {
             bottom: 22px;
         }
     }
@@ -75,7 +72,7 @@
             width: auto !important;
             border-radius: 0 !important;
 
-            @media screen and (max-width: 992px) and (orientation: landscape) and (max-height: 650px) {
+            @media screen and (max-width: 992px) and (orientation: landscape) and (max-height: 450px) {
                 bottom: 28px !important;
             }
         }
