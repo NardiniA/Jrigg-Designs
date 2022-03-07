@@ -270,6 +270,25 @@ table tr:first-child {
   border-top: 0;
 }
 
+.gslide img {
+  border-radius: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .glightbox-clean .gprev, .glightbox-clean .gnext {
+    top: 90% !important;
+  }
+  .glightbox-clean .gprev.disabled, .glightbox-clean .gnext.disabled {
+    opacity: 0.5;
+  }
+  .glightbox-clean .gprev {
+    left: 1rem !important;
+  }
+  .glightbox-clean .gnext {
+    right: 1rem !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

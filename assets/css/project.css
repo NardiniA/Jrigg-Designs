@@ -214,23 +214,4 @@
           justify-content: center;
   font-size: 1.5rem;
 }
-
-.gslide img {
-  border-radius: 0 !important;
-}
-
-@media screen and (max-width: 768px) {
-  .glightbox-clean .gprev, .glightbox-clean .gnext {
-    top: 90% !important;
-  }
-  .glightbox-clean .gprev.disabled, .glightbox-clean .gnext.disabled {
-    opacity: 0.5;
-  }
-  .glightbox-clean .gprev {
-    left: 1rem !important;
-  }
-  .glightbox-clean .gnext {
-    right: 1rem !important;
-  }
-}
 /*# sourceMappingURL=project.css.map */

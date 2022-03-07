@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/gallery.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
     <header class="header">
@@ -138,30 +139,24 @@
         <section class="section gallery">
             <div class="an-container">
                 <div class="gallery__grid">
-                    <div class="gallery__grid-item">
+                    <a href="/assets/img/projects/project1.jpg" class="gallery__grid-item square">
+                        <img src="/assets/img/projects/project1.jpg" alt="#" />
+                    </a>
+                    <a href="/assets/img/projects/project2.jpg" class="gallery__grid-item rowspan">
+                        <img src="/assets/img/projects/project2.jpg" alt="#" />
+                    </a>
+                    <a href="/assets/img/projects/project3.jpg" class="gallery__grid-item">
+                        <img src="/assets/img/projects/project3.jpg" alt="#" />
+                    </a>
+                    <a href="/assets/img/job.jpg" href="/assets/img/projects/project1.jpg" class="gallery__grid-item colspan">
                         <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item colspan2">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item rowspan2">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
-                    <div class="gallery__grid-item">
-                        <img src="/assets/img/job.jpg" alt="#" />
-                    </div>
+                    </a>
+                    <a href="/assets/img/content.jpg" class="gallery__grid-item">
+                        <img src="/assets/img/content.jpg" alt="#" />
+                    </a>
+                    <a href="/assets/img/project.jpg" class="gallery__grid-item">
+                        <img src="/assets/img/project.jpg" alt="#" />
+                    </a>
                 </div>
             </div>
         </section>
@@ -178,5 +173,7 @@
     </main>
 
     <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 </body>
 </html>

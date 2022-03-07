@@ -258,6 +258,31 @@ table {
     }
 }
 
+.gslide img {
+    border-radius: 0 !important;
+}
+
+.glightbox-clean {
+    @media screen and (max-width: 768px) {
+        .gprev, .gnext {
+            top: 90% !important;
+
+            &.disabled {
+                opacity: 0.5;
+            }
+        }
+
+        .gprev {
+            left: 1rem !important;
+        }
+
+        .gnext {
+            right: 1rem !important;
+        }
+    }
+}
+
+
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
