@@ -1,0 +1,16 @@
+.gallery__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(210px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 2rem;
+}
+
+.gallery__grid-item {
+  overflow: hidden;
+}
+
+.gallery__grid-item img {
+  display: block;
+}
+/*# sourceMappingURL=gallery.css.map */

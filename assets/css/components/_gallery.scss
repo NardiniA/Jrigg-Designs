@@ -1,0 +1,15 @@
+.gallery {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 2rem;
+
+        &-item {
+            overflow: hidden;
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
