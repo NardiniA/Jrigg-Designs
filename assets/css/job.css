@@ -1,0 +1,235 @@
+.job__cover {
+  position: relative;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.job__cover.centred .job__cover-overlay {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.job__cover.no-radius {
+  border-radius: 0;
+}
+
+.job__cover.no-radius .job__cover-overlay {
+  border-radius: 0;
+}
+
+.job__cover img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+.job__cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46.88%, rgba(0, 0, 0, 0)), color-stop(93.23%, rgba(214, 195, 145, 0.46)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.88%, rgba(214, 195, 145, 0.46) 93.23%);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.job__cover-info, .job__cover-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.job__cover-meta p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 28px;
+  color: var(--white-color);
+  margin: 0 2rem 0 0;
+}
+
+.job__cover-meta p i {
+  font-size: 18px;
+  margin: 0 10px 0 0;
+}
+
+.job__cover-meta p span {
+  display: inline-block;
+}
+
+.job__content {
+  padding: 60px 0 0;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1920px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .job__content {
+    padding-right: 50px;
+  }
+}
+
+.job__content > h1, .job__content > h2, .job__content > h3, .job__content > p {
+  margin-bottom: 24px;
+}
+
+.job__content > h4 {
+  margin-bottom: 20px;
+}
+
+.job__content > h5, .job__content > h6 {
+  margin-bottom: 16px;
+}
+
+.job__content > img {
+  margin-bottom: 40px;
+}
+
+.job__sidebar {
+  padding: 60px 0 0;
+}
+
+.job__box {
+  padding: 45px 40px;
+  position: relative;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  margin: 0 0 50px;
+}
+
+.job__box-title {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.job__box-list {
+  margin: 0 0 20px;
+}
+
+.job__more {
+  margin: 0 0 50px;
+}
+
+.job__more-title {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.job__more-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.job__more-list li {
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.job__more-list li:last-child {
+  border-bottom: 0;
+}
+
+.job__more-image {
+  max-width: 80px;
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+}
+
+.job__more-info-title {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 5px;
+  color: var(--white-color);
+  cursor: pointer;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.job__more-info-title:hover {
+  color: var(--secondary-color);
+}
+
+.job__more-info-title a {
+  color: inherit;
+  display: inline-block;
+}
+
+.job__more-info-desc {
+  margin: 0;
+  font-size: 14px;
+  color: var(--white-alt);
+}
+
+.job__share-title {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.job__share-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.job__share-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--primary-light);
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=job.css.map */

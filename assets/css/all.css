@@ -340,6 +340,7 @@
   background-color: var(--primary-light);
   color: var(--white-color);
   margin-bottom: 2rem;
+  border-radius: 10px;
 }
 
 .recruitment__card a {
@@ -367,6 +368,7 @@
   padding: 5px 20px;
   display: inline-block;
   margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 .recruitment__card-title {
@@ -389,6 +391,7 @@
 .recruitment__card-btn, .recruitment__card .button {
   background-color: var(--primary-light);
   color: var(--white-color);
+  border-radius: 5px;
 }
 
 .recruitment__card-btn:hover, .recruitment__card-btn:focus, .recruitment__card .button:hover, .recruitment__card .button:focus {

@@ -64,11 +64,12 @@
 
     &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
         background-color: var(--white-color);
-        color: var(--dark-30);
+        color: var(--white-alt);
+        opacity: 0.5;
         pointer-events: none;
 
         i, svg {
-            color: var(--dark-30);
+            color: var(--white-alt);
         }
     }
 
@@ -159,5 +160,76 @@
         --btn-base: var(--secondary-color);
         --btn-dark: #AD8E40;
         --btn-darkest: #8D7434;
+        color: var(--btn-base);
+
+        &:focus {
+            background-color: var(--btn-base);
+            color: var(--white-color);
+        }
+
+        &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+            opacity: 0.5;
+            background-color: transparent;
+            color: var(--btn-base);
+            pointer-events: none;
+            user-select: none;
+        }
+
+        &.button--solid {
+            background-color: var(--btn-base);
+            color: var(--white-color);
+
+            &:hover, &:focus {
+                background-color: var(--btn-darkest);
+                color: var(--white-color);
+            }
+
+            &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+                opacity: 0.5;
+                background-color: var(--btn-base);
+                color: var(--white-color);
+                pointer-events: none;
+                user-select: none;
+            }
+        }
+
+        &.button--outline {
+            background-color: transparent;
+            color: var(--btn-base);
+            border: 0.5px solid var(--btn-base);
+
+            &:hover {
+                background-color: var(--btn-light);
+                color: var(--btn-base);
+            }
+
+            &:focus {
+                background-color: var(--btn-base);
+                color: var(--white-color);
+            }
+
+            &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+                opacity: 0.5;
+                background-color: var(--btn-base);
+                color: var(--white-alt);
+                pointer-events: none;
+                user-select: none;
+            }
+        }
+
+        &.button--teritary {
+            &:hover, &:focus {
+                background-color: var(--btn-base);
+                color: var(--white-color);
+            }
+
+            &.disabled, &.disabled:hover, &.disabled:focus, &:disabled, &:disabled:hover, &:disabled:focus {
+                opacity: 0.5;
+                background-color: var(--btn-light);
+                color: var(--white-color);
+                pointer-events: none;
+                user-select: none;
+            }
+        }
     }
 }

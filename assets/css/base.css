@@ -749,12 +749,60 @@ table tr:first-child {
   background-color: var(--primary-darkest);
 }
 
-.banner.image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(/assets/img/banner-2.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/assets/img/banner-2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner__image {
+  position: relative;
+  border-radius: 10px;
+  height: 400px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.banner__image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  border-radius: 0;
+}
+
+.banner__image.h-500 {
+  height: 500px !important;
+}
+
+.banner__image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.banner__image-overlay-info {
+  display: block;
+  text-align: center;
+}
+
+.banner__image-overlay-info .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner__info {
@@ -993,12 +1041,13 @@ table tr:first-child {
 
 .button.disabled, .button.disabled:hover, .button.disabled:focus, .button:disabled, .button:disabled:hover, .button:disabled:focus {
   background-color: var(--white-color);
-  color: var(--dark-30);
+  color: var(--white-alt);
+  opacity: 0.5;
   pointer-events: none;
 }
 
 .button.disabled i, .button.disabled svg, .button.disabled:hover i, .button.disabled:hover svg, .button.disabled:focus i, .button.disabled:focus svg, .button:disabled i, .button:disabled svg, .button:disabled:hover i, .button:disabled:hover svg, .button:disabled:focus i, .button:disabled:focus svg {
-  color: var(--dark-30);
+  color: var(--white-alt);
 }
 
 .button.icon--right {
@@ -1095,6 +1144,87 @@ table tr:first-child {
   --btn-base: var(--secondary-color);
   --btn-dark: #AD8E40;
   --btn-darkest: #8D7434;
+  color: var(--btn-base);
+}
+
+.button.button--secondary:focus {
+  background-color: var(--btn-base);
+  color: var(--white-color);
+}
+
+.button.button--secondary.disabled, .button.button--secondary.disabled:hover, .button.button--secondary.disabled:focus, .button.button--secondary:disabled, .button.button--secondary:disabled:hover, .button.button--secondary:disabled:focus {
+  opacity: 0.5;
+  background-color: transparent;
+  color: var(--btn-base);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button.button--secondary.button--solid {
+  background-color: var(--btn-base);
+  color: var(--white-color);
+}
+
+.button.button--secondary.button--solid:hover, .button.button--secondary.button--solid:focus {
+  background-color: var(--btn-darkest);
+  color: var(--white-color);
+}
+
+.button.button--secondary.button--solid.disabled, .button.button--secondary.button--solid.disabled:hover, .button.button--secondary.button--solid.disabled:focus, .button.button--secondary.button--solid:disabled, .button.button--secondary.button--solid:disabled:hover, .button.button--secondary.button--solid:disabled:focus {
+  opacity: 0.5;
+  background-color: var(--btn-base);
+  color: var(--white-color);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button.button--secondary.button--outline {
+  background-color: transparent;
+  color: var(--btn-base);
+  border: 0.5px solid var(--btn-base);
+}
+
+.button.button--secondary.button--outline:hover {
+  background-color: var(--btn-light);
+  color: var(--btn-base);
+}
+
+.button.button--secondary.button--outline:focus {
+  background-color: var(--btn-base);
+  color: var(--white-color);
+}
+
+.button.button--secondary.button--outline.disabled, .button.button--secondary.button--outline.disabled:hover, .button.button--secondary.button--outline.disabled:focus, .button.button--secondary.button--outline:disabled, .button.button--secondary.button--outline:disabled:hover, .button.button--secondary.button--outline:disabled:focus {
+  opacity: 0.5;
+  background-color: var(--btn-base);
+  color: var(--white-alt);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button.button--secondary.button--teritary:hover, .button.button--secondary.button--teritary:focus {
+  background-color: var(--btn-base);
+  color: var(--white-color);
+}
+
+.button.button--secondary.button--teritary.disabled, .button.button--secondary.button--teritary.disabled:hover, .button.button--secondary.button--teritary.disabled:focus, .button.button--secondary.button--teritary:disabled, .button.button--secondary.button--teritary:disabled:hover, .button.button--secondary.button--teritary:disabled:focus {
+  opacity: 0.5;
+  background-color: var(--btn-light);
+  color: var(--white-color);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .footer {
