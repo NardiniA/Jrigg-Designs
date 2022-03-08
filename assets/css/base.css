@@ -461,8 +461,7 @@ table tr:first-child {
 }
 
 .header.show .header__toggle {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  height: 23px;
 }
 
 .header.show .header__toggle span:nth-child(1) {
